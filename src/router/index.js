@@ -4,15 +4,16 @@ import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: defineAsyncComponent(() => import('../view/Home.vue')),
+    name: 'Login',
+    component: defineAsyncComponent(() => import('../view/Login.vue')),
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: defineAsyncComponent(() => import('../view/Dashboard.vue')),
   },
 ];
 
-// const router = createRouter({
-//   history: createWebHistory(),
-//   routes,
-// });
 const router = createRouter({
     history: createWebHistory(),
     routes
